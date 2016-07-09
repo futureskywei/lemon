@@ -8,6 +8,12 @@
 <%@tag import="com.mossle.core.auth.CurrentUserHolder" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@attribute name="systemCode" type="java.lang.Object" required="true" %>
+<li class="''">
+    <a href="/lemon/portal/index.do">
+        <i class="glyphicon glyphicon-list"></i>
+        首页
+    </a>
+</li>
 <%
     String systemCode = (String) jspContext.getAttribute("systemCode");
     // System.out.println("systemCode : " + systemCode);
@@ -29,6 +35,7 @@
             for (MenuDTO menuDto : menuDtos) {
                 // System.out.println(menuDto.getTitle());
                 jspContext.setAttribute("menu", menuDto);
+//                 System.out.println(menuDto.toString());
                 index++;
                 if (index > 5) {
                     overflows.add(menuDto);

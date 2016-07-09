@@ -8,6 +8,8 @@ CKEDITOR.editorConfig = function( config )
 	// Define changes to default configuration here. For example:
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
+	config.language = 'zh-cn';
+	config.skin = 'kama';
 
 	config.toolbar = 'Custom';
 
@@ -16,7 +18,7 @@ CKEDITOR.editorConfig = function( config )
 		{ name: 'document', items : [ 'NewPage' ] },
 		{ name: 'styles', items : [ 'Styles','Format','Font','FontSize' ] },
 		{ name: 'basicstyles', items : [ 'Bold','TextColor','BGColor' ] },
-		{ name: 'insert', items : [ 'Link','Unlink','Image','Flash','Table' ] },
+		{ name: 'insert', items : [ 'Link','Unlink','Image','Table' ] },
 		{ name: 'tools', items : [ 'Source','Preview','Maximize' ] }
 	];
 };

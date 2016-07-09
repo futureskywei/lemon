@@ -58,4 +58,17 @@ public class MenuDTO {
     public void setChildren(List<MenuDTO> children) {
         this.children = children;
     }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("MenuDTO{");
+        sb.append("code='").append(code).append('\'');
+        sb.append(", title='").append(title).append('\'');
+        sb.append(", url='").append(url).append('\'');
+        sb.append(", permission='").append(permission).append('\'');
+        sb.append(", type='").append(type).append('\'');
+        sb.append(", children=").append(children);
+        sb.append('}');
+        return sb.toString();
+    }
 }
